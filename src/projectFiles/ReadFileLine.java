@@ -15,7 +15,7 @@ public class ReadFileLine {
             }
             FileReader fr = new FileReader(fileName);
 
-            File file = new File("resource/" + getFileName());
+            File file = new File("resource/" + getFileName('b'));
             file.createNewFile();
 
             FileWriter fw = new FileWriter(file);
@@ -33,11 +33,15 @@ public class ReadFileLine {
         }
     }
 
-    private String getFileName(){
+    private String getFileName(char prefix){
         Date today = new Date();
         DateFormat sdf = new SimpleDateFormat("HHmmss");
         String name;
-        name = "b_" + sdf.format(today);
+        name = prefix + "_" + sdf.format(today);
         return name;
+    }
+
+    public void copyAndEncryptFile(String fileName){
+
     }
 }
