@@ -1,3 +1,3 @@
 An Exception is an unwanted event that interrupts the normal flow of the program.
 When an exception occurs program execution gets terminated. In such cases we get a system generated error message.
-The good thing about exceptions is that they can be handled in Java.
+The good thing about exceptions is that they can be handled in Java. 19991*/%
