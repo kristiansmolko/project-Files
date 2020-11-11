@@ -15,6 +15,8 @@ public class ReadFileLine {
                 line = line.toUpperCase();
                 System.out.println(line);
             }
+
+            fr.close();
         }catch(IOException ex){
             ex.printStackTrace();
         }
