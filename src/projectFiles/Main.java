@@ -1,4 +1,4 @@
-package files;
+package projectFiles;
 
 public class Main {
     public static void main(String[] args) {

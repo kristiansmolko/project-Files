@@ -1,4 +1,4 @@
-package files;
+package projectFiles;
 
 import java.io.*;
 import java.text.DateFormat;
@@ -9,6 +9,10 @@ public class ReadFileLine {
     public void copyFileWithCapital(String fileName){
         BufferedReader reader;
         try {
+            if (new File(fileName).exists() == false){
+                System.out.println("This file " + fileName + " does not exist!");
+                return;
+            }
             FileReader fr = new FileReader(fileName);
 
             File file = new File("resource/" + getFileName());
