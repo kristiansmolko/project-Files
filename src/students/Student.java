@@ -11,6 +11,7 @@ public class Student {
     private int age;
     private final double height;
     private final int weight;
+    private Contact contact;
 
     public Student(String fname, String lname, String id, double height, int weight) {
         this.fname = fname;
@@ -19,6 +20,7 @@ public class Student {
         this.height = height;
         this.weight = weight;
         setAge();
+        contact = null;
     }
 
     private void setAge() {
@@ -80,5 +82,13 @@ public class Student {
 
     public Gender getGender(){
         return id.charAt(2)<'2'?Gender.MALE:Gender.FEMALE;
+    }
+
+    public Contact getContact() {
+        return contact;
+    }
+
+    public void setContact(Contact contact) {
+        this.contact = contact;
     }
 }
